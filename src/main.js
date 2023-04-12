@@ -1,8 +1,9 @@
-import animateTitle from './features/animateTitle'
-import createBadge from './features/createBasge'
+import swipe from './features/swipe'
 import './styles/style.css'
 
-console.log('Welcome to Vite + JS + Webflow!')
+console.log('Welcome')
 
-createBadge()
-animateTitle()
+const isSwipejs = window.location.pathname == '/swipejs'
+if (isSwipejs) {
+  swipe()
+}
